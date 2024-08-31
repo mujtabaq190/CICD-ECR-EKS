@@ -64,7 +64,7 @@ pipeline {
                     withCredentials([usernamePassword(credentialsId: 'gitlab-credentials', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
                         sh 'git config user.email "jenkins@example.com"'
                         sh 'git config user.name "Jenkins"'
-                        sh "git remote set-url origin https://${USER}:${PASS}@gitlab.com/sergio.sphynx7/eks-pipeline.git"
+                        sh "git remote set-url origin https://${USER}:${PASS}@gitlab.com/mujtaba.qureshi/deploy-on-k8s.git"
                         sh 'git add .'
                         sh 'git commit -m "ci: version bump"'
                         sh 'git push origin HEAD:jenkins-jobs'
