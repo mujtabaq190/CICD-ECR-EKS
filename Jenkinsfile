@@ -61,7 +61,7 @@ pipeline {
         stage('commit version update') {
             steps {
                 script {
-                    withCredentials([usernamePassword(credentialsId: 'gitlab-credentials-id', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
+                    withCredentials([usernamePassword(credentialsId: 'gitlab-credentials', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
                         sh 'git remote set-url origin https://$GIT_USERNAME:$GIT_PASSWORD@gitlab.com/mujtaba.qureshi/deploy-on-k8s.git'
                         sh 'git config user.email "jenkins@example.com"'
                         sh 'git config user.name "Jenkins"'
