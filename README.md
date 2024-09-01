@@ -39,6 +39,10 @@ Trigger your build.
 
 ## Screenshots
 
+CI/CD Overview.
+
+![Jenkins Stage View](https://gitlab.com/mujtaba.qureshi/deploy-on-k8s/-/raw/main/Images/Overview.jpg?ref_type=heads)
+
 Jenkins Stage View.
 
 ![Jenkins Stage View](https://gitlab.com/mujtaba.qureshi/deploy-on-k8s/-/raw/main/Images/Jenkins-pipeline-view.jpg?ref_type=heads)
